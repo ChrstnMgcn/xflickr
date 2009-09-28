@@ -1,0 +1,66 @@
+.xphoto {
+	padding: 5px;
+	border: #eee 1px solid;
+}
+.xphoto.left {
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+.xphoto.right {
+	float: right;
+	margin: 5px 0 5px 5px;
+}
+.xphoto.center {
+	margin: 5px auto;
+	clear: both;
+}
+.xphoto-img img {
+	border: none;
+}
+.xphoto-title h4 {
+	text-align: center;
+	line-height: 16px;
+	font-size: 14px;
+	margin: 0;
+	font-weight: normal;
+}
+.xphoto-description p {
+	line-height: 14px;
+	font-size: 12px;
+	margin: 0;
+}
+.xphoto-flickr-link {
+	height: 10px;
+	text-align: right;
+}
+.xphoto-flickr-link a {
+	line-height: 10px;
+	border: none;
+}
+.xphoto-flickr-link img {
+	border: none;
+}
+/*Gallery*/
+.xgallery-photo {
+	margin: 5px;
+	float: left;
+}
+.xgallery-pagination {
+	clear: both;
+	text-align: center;
+}
+.xgallery-pagination span {
+	border: #333 1px solid;
+	cursor: pointer;
+	padding: 1px 5px;
+	margin: 0 3px;
+}
+.xgallery-pagination span.current {
+	background-color: #f7f7f7;
+	color: #a0a0a0;
+	cursor: auto;
+}
+.xgallery-pagination span.ellipse {
+	border: none;
+	cursor: auto;
+}
