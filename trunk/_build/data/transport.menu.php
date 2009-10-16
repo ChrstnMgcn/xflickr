@@ -9,9 +9,9 @@ $action= $modx->newObject('modAction');
 $action->fromArray(array(
     'id' => 1,
     'namespace' => 'xflickr',
-    'parent' => '0',
+    'parent' => 0,
     'controller' => 'index',
-    'haslayout' => '1',
+    'haslayout' => 1,
     'lang_topics' => 'xflickr:default',
     'assets' => '',
 ),'',true,true);
@@ -19,8 +19,7 @@ $action->fromArray(array(
 /* load menu into action */
 $menu= $modx->newObject('modMenu');
 $menu->fromArray(array(
-    'id' => 1,
-    'parent' => '2',
+    'parent' => 'components',
     'text' => 'xflickr',
     'description' => 'xflickr.desc',
     'icon' => 'images/icons/plugin.gif',
@@ -28,6 +27,6 @@ $menu->fromArray(array(
     'params' => '',
     'handler' => '',
 ),'',true,true);
-$action->addMany($menu,'Menus');
+$menu->addOne($action);
 
-return $action;
+return $menu;
