@@ -4,7 +4,7 @@
  *
  * @copyright Copyright (C) 2009, atma <atma@atmaworks.com>
  * @author atma <atma@atmaworks.com>
- * @license http://opensource.org/licenses/gpl-2.0.php GNU Public License v2
+ * @license http://www.gnu.org/licenses/gpl-3.0.html GNU Public License v3
  * @package xflickr
  */
 class XFlickr {

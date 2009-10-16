@@ -1,4 +1,4 @@
-XFlickr component contain backend part and some snippent for frontend
+XFlickr component contain backend part and some snippents for frontend
 
 --------------------
 Snippet: XPhoto

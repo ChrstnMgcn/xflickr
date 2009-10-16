@@ -39,18 +39,18 @@ $builder->createPackage('xflickr','0.1','alpha1');
 $builder->registerNamespace('xflickr',false,true,'{core_path}components/xflickr/');
 
 /* load action/menu */
-$action = include $sources['data'].'transport.action.php';
+$menu = include $sources['data'].'transport.menu.php';
 
-$vehicle= $builder->createVehicle($action,array (
-    XPDO_TRANSPORT_PRESERVE_KEYS => false,
+$vehicle= $builder->createVehicle($menu,array (
+    XPDO_TRANSPORT_PRESERVE_KEYS => true,
     XPDO_TRANSPORT_UPDATE_OBJECT => true,
-    XPDO_TRANSPORT_UNIQUE_KEY => array ('namespace','controller'),
+    XPDO_TRANSPORT_UNIQUE_KEY => 'text',
     XPDO_TRANSPORT_RELATED_OBJECTS => true,
     XPDO_TRANSPORT_RELATED_OBJECT_ATTRIBUTES => array (
-        'Menus' => array (
+        'Action' => array (
             XPDO_TRANSPORT_PRESERVE_KEYS => false,
             XPDO_TRANSPORT_UPDATE_OBJECT => true,
-            XPDO_TRANSPORT_UNIQUE_KEY => array ('action', 'text'),
+            XPDO_TRANSPORT_UNIQUE_KEY => array ('namespace', 'controller'),
         ),
     ),
 ));
@@ -108,7 +108,7 @@ $attr = array(
     XPDO_TRANSPORT_UPDATE_OBJECT => true,
     XPDO_TRANSPORT_RELATED_OBJECTS => true,
     XPDO_TRANSPORT_RELATED_OBJECT_ATTRIBUTES => array (
-        'modSnippet' => array(
+        'Snippets' => array(
             XPDO_TRANSPORT_PRESERVE_KEYS => false,
             XPDO_TRANSPORT_UPDATE_OBJECT => true,
             XPDO_TRANSPORT_UNIQUE_KEY => 'name',
