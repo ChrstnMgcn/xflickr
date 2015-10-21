@@ -1,0 +1,1 @@
+Flickr photos manipulation tool for [MODx CMS](http://modxcms.com/)
